@@ -14,9 +14,8 @@ These steps require that you have OpenSSL installed on your computer. OpenSSL is
     [alt\_names]
     DNS.1 = www.yourdomain.com
 ```
-Make sure to replace &quot;www.yourdomain.com&quot; with your domain name.
-
-Name the file **v3.ext** and save it in the current folder. (The folder where you want all your keys and certs created.)
+* Make sure to replace &quot;www.yourdomain.com&quot; with your domain name.
+* Name the file **v3.ext** and save it in the current folder. (The folder where you want all your keys and certs created.)
 
 **Note:** The following OpenSSL commands should all be run from a terminal/console/PowerShell console that is in the folder where you saved the extension file. (You&#39;ll need to configure OpenSSL in Windows so that its location is in the path.)
 
@@ -48,9 +47,8 @@ Answer the questions asked. For the &quot;Common Name&quot;, do NOT use your dom
 openssl req -new -key ia.key -out ia.csr
 ```
 
-Make sure that the &quot;Common Name&quot; is the domain name you want for the cert.
-
-Make sure that the &quot;Common Name&quot; matches the domain in `alt\_names` in your ext file
+* Make sure that the &quot;Common Name&quot; is the domain name you want for the cert.
+* Make sure that the &quot;Common Name&quot; matches the domain in `alt\_names` in your ext file.
 
 ## Step 6: Process the cert request and sign it with the root CA.
 
