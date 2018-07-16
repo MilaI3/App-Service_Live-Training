@@ -12,7 +12,7 @@ Step 1: Create an extension file with the following text:
     subjectAltName = @alt\_names
 
     [alt\_names]
-    DNS.1 =  [www.yourdomain.com](http://www.yourdomain.com)
+    DNS.1 =  www.yourdomain.com
 ```
 Make sure to replace &quot;www.yourdomain.com&quot; with your domain name.
 
